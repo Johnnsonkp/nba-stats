@@ -3,9 +3,9 @@
 :root{
     --left-bg-color: rgba(87,84,236, 0.7);
     --mouse-leave: rgba(43,43,43, 0.8);
-    --right-bg-color: rgba(150, 40, 27, 0.8);
+    --right-bg-color: rgba(150, 40, 27, 0.7);
     --left-btn-hover-color: rgba(87,84,236, 1);
-    --right-btn-hover-color: rgba(28, 122, 28, 1);
+    --right-btn-hover-color: rgba(150, 40, 27, 1);
     --hover-width: 75%;
     --other-width: 25%;
     --speed: 1000ms;
@@ -66,13 +66,14 @@ header .left-side{
    display: flex;
 }
 .split-header{
-    font-size: 4rem;
-    color: black;
-    text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black, 3px 3px 0 black;
+    /* box-shadow: 2px 3px 7px 1px #cecbcb; */
     text-transform: uppercase;
     position: absolute;
     left: 50%;
-    top: 4%;
+    top: 20%;
     transform: translateX(-50%);
     white-space: nowrap; /* allows for text to remain on the same line even when page is minimised*/
 }
@@ -93,6 +94,7 @@ header .left-side{
     text-transform: uppercase;
     width: 15rem;
     padding: 1.5rem;
+    box-shadow: 2px 3px 7px 1px #cecbcb;
     
 }
 .split.left .btn:hover{
@@ -111,8 +113,8 @@ header .left-side{
     background: #333;
 }
 .container .teams{
-    padding-top: 25%;
-    width: 80%;
+    padding-top: 15%;
+    width: 90%;
     margin: auto;
     height: 70vh;
     display: flex;
@@ -188,9 +190,9 @@ header .left-side{
 
 .remove-padding{
     transition: all var(--speed) ease-in-out; 
-    padding-top: 10% !important;
+    padding-top: 5% !important;
 }
-.east-teams{
+.display-none{
     display: none !important;
 }
 .mouse-leave::before{
