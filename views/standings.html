@@ -14,12 +14,12 @@
             <div class="header-container">
                 <div class="content">
                     <div class="left-side">
-                        <img src="../docs/img/nba-image.png">
+                        <a href="../src/index.html"><img src="../docs/img/nba-image.png"></a>
                         <h1> Stats</h1>
                     </div>
                     <div class="right-side">
                         <ul>
-                            <li>Standings</li>
+                            <li><a href="standings.html">Standings</a></li>
                             <li>Scoring Leaders</li>
                             <li>Assist Leaders</li>
                         </ul>
@@ -36,14 +36,14 @@
     <h1 class="standings-header">2020-2021 SEASON LEAGUE STANDINGS</h1>
     
         <table class="styled-table">
-            <thead>
+            <thead class="east-table-head">
                 <tr>
                     <th>Eastern Conference</th>
                 </tr>
             </thead>
             <thead>
                 <tr>
-                    <th>Standing</th>
+                    <th class="num">Standing</th>
                     <th>Name</th>
                     <th>Win</th>
                     <th>Loss</th>
@@ -52,31 +52,104 @@
             </thead>
             <tbody>
                 <tr class="active-row">
+                    <td class="num">1</td>
+                    <td class="east-logo"><img class="cavs" src="../docs/img/east-teams/cleveland-cavs.png">Cleveland Cavaliers</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>Won 3</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/orlando-magic.png">Orlando Magic</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>Won 3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/indiana-pacers.png">Indiana Pacers</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>Won 3</td>
+                <tr>
+                    <td>4</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/atl.png">Atlanta Hawks</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>Won 3</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/philadelphia-76ers.png">Philadelphia 76ers</td>
+                    <td>2</td>
                     <td>1</td>
-                    <td>Cleveland Cavaliers</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>Won 3</td>
+                    <td>Lost 1</td>
                 </tr>
                 <tr>
+                    <td>6</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/nets.png">Brooklyn Nets</td>
                     <td>2</td>
-                    <td>Orlando Magic</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>Won 3</td>
+                    <td>2</td>
+                    <td>Lost 2</td>
+                <tr>
+                    <td>7</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/miami-heat.png">Miami Heat</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>Won 1</td>
                 </tr>
                 <tr>
-                    <td>3</td>
-                    <td>Indiana Pacers</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>Won 3</td>
-                <tr>
+                    <td>8</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/new-york-knicks.png">New York Knicks</td>
+                    <td>1</td>
                     <td>2</td>
-                    <td>Orlando Magic</td>
-                    <td>3</td>
+                    <td>Won 1</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/celtics.png">Boston Celtics</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>Lost 2</td>
+                <tr>
+                    <td>10</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/milwaukee-bucks.png">Milwaukee Bucks</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>Lost 1</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/hornets.png">Charlotte Hornets</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>Won 1</td>
+                <tr>
+                    <td>12</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/toronto-raptors.png">Toronto Raptors</td>
                     <td>0</td>
-                    <td>Won 3</td>
+                    <td>2</td>
+                    <td>Lost 2</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="east-logo"><img class="wizards-logo" src="../docs/img/east-teams/washington-wizards.png">Washington Wizards</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>Lost 3</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/detroit-pistons.png">Detroit Pistons</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>Lost 3</td>
+                <tr>
+                    <td>15</td>
+                    <td class="east-logo"><img src="../docs/img/east-teams/chicago-bulls.png">Chicago Bulls</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>Lost 3</td>
                 </tr>
                 <!-- and so on... -->
             </tbody>
@@ -87,12 +160,12 @@
     
 <table class="west-conf styled-table">
     <thead>
-        <tr>
+        <tr class="west-conf-tr">
             <th>Western Conference</th>
         </tr>
     </thead>
     <thead>
-        <tr>
+        <tr class="west-conf-tr">
             <th>Standing</th>
             <th>Name</th>
             <th>Win</th>
@@ -100,7 +173,7 @@
             <th>Streaks</th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="west-body">
         <tr class="active-row">
             <td>1</td>
             <td>Cleveland Cavaliers</td>

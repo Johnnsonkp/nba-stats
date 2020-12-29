@@ -14,6 +14,10 @@
 *{
     box-sizing: border-box;
 }
+a{
+    color: #fff;
+    text-decoration: none;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -24,11 +28,11 @@ body{
 header {
     background-color: black;
     color: #fff;
-    padding: 4px;
+    padding: 8px;
 }
 header .content{
     display: flex;
-
+    justify-content: space-between;
 }
 header .header-container{
     width: 90%;
@@ -43,12 +47,15 @@ header ul {
     margin-top: 10px;
 }
 header ul li{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    /* padding-right: 25px; */
     cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
 }
 header img{
     width: 10%;
+    width: 100px;
     height: 70%;
     margin: 0;
     display: inline;
@@ -214,6 +221,7 @@ header .left-side{
     font-family: sans-serif;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
 }
 
 .styled-table thead tr {
@@ -221,11 +229,14 @@ header .left-side{
     background-color: var(--left-bg-color);
     color: #ffffff;
     text-align: left;
+    
 }
-
+table .east-table-head tr th{
+    width: 250px;
+}
 .styled-table th,
 .styled-table td {
-    padding: 12px 55px;
+    padding: 10px 55px;
 }
 
 .styled-table tbody tr {
@@ -238,16 +249,53 @@ header .left-side{
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: thin solid #009879;
+    border-bottom: thin solid var(--left-bg-color);
 }
 
 .standings-header{
     margin-top: 3rem;
 }
+.east-logo{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+table .cavs{
+    /* width: 9%; */
+    height: 2.7rem;
+}
+table img{
+    width: 50px;
+    margin: 0;
+    padding: 5px;
+}
+table .num{
+    width: 10px;
+}
+/* table img:nth-of-type(2){
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 5px;
+}
+table img:nth-of-type(odd){
+    border: 1px solid #f3f3f3;
+    padding: 5px;
+    background: #f3f3f3;
+} */
 
-/* West conference */
+
+/* West conference table */
 .west-conf{
-    margin-top: 100px;
+    margin-top: 50px;
+}
+.styled-table thead .west-conf-tr {
+    background-color: var(--right-bg-color);
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table .west-body tr:last-of-type {
+    border-bottom: thin solid var(--right-bg-color);
 }
 
 
