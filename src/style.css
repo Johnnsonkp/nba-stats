@@ -234,6 +234,9 @@ header .left-side{
 table .east-table-head tr th{
     width: 250px;
 }
+table .west-table-head tr th{
+    width: 250px;
+}
 .styled-table th,
 .styled-table td {
     padding: 10px 55px;
@@ -256,6 +259,12 @@ table .east-table-head tr th{
     margin-top: 3rem;
 }
 .east-logo{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+}
+.west-logo{
     width: 75%;
     display: flex;
     align-items: center;
